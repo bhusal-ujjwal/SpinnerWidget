@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Details.PersonalDetails">
+    <TextView
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textAlignment="textEnd"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/images"
+        android:hint="Age"/>
+    <EditText
+        android:id="@+id/education"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:hint="Education"
+        android:layout_below="@id/age" />
+    <EditText
+        android:id="@+id/fathername"
+        android:layout_width="160dp"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/education"
+        android:hint="Father's name"
+        />
+    <EditText
+        android:id="@+id/grandfathername"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/fathername"
+        android:hint="GrandFather's Name" />
+    <TextView
+        android:id="@+id/tvreligious"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/age"
+        android:textSize="15sp"
+        android:text="Select your religion"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/images" />
+
+    <Spinner
+        android:id="@+id/religious"
+        android:layout_width="160dp"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/age"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/images"
+        android:text="Select your religion"
+        android:entries="@array/religion"/>
+
+    <EditText
+        android:id="@+id/occupation"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/religious"
+        android:layout_marginTop="20dp"
+        android:hint="Occupation"
+        android:layout_toEndOf="@id/education"
+        android:textSize="15sp"
+        android:layout_marginStart="40dp" />
+
+    <EditText
+        android:id="@+id/mothername"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mother's Name"
+        android:textSize="15sp"
+        android:layout_toEndOf="@id/fathername"
+        android:layout_below="@id/occupation"
+        android:layout_marginStart="40dp"
+        />
+    <EditText
+        android:id="@+id/husbandorwifename"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Husband/Wife Name"
+        android:layout_marginStart="40dp"
+        android:textSize="15sp"
+        android:layout_below="@id/mothername"
+        android:layout_toEndOf="@id/grandfathername" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/husbandorwifename"
+        android:layout_margin="10dp"/>
+    
+
+
+
+</RelativeLayout>
